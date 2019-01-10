@@ -1,8 +1,10 @@
-# webchess
-docker running webchess on debian wheezy
+# Webchess
+This is docker running webchess on debian wheezy
+
+# Configuration
+If You want to use your own external database, You need to adjust the config.php file.
 
 # Building
-If You want to use your own external database, You need to adjust the config.php file.
 docker build -t webchess .
 
 # Create container
