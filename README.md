@@ -2,7 +2,7 @@
 This is docker running webchess on debian wheezy
 
 # Configuration
-If You want to use your own external database, You need to adjust the config.php file.
+If You want to use your own external database, You need to adjust the config.php file. For Raspberry pi3 building from Dockerfile on rpi needed.
 
 # Building
 docker build -t webchess .
