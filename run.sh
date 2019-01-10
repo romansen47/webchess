@@ -5,6 +5,7 @@ cd /tmp && git clone https://github.com/Thorium/webchess
 rm /var/www/index.html
 
 mv /tmp/webchess/* /var/www/
+mv /tmp/config.php /var/www/config.php
 
 chown -R www-data:www-data /var/www/
 
