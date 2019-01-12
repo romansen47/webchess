@@ -25,16 +25,18 @@ Mind that or Raspberry Pie local building from Dockerfile is needed. Alternative
 
 ## Create container
 
+
+Create mysql folder
+
+> ~# mkdir mysql
+
 If You are using an external database You need to forward the standard mysql port 3306 
 
-> ~# docker run -p 80:80 -p 3306:3306 webchess &
+> ~# docker run -v $PWD/mysql:/var/lib/mysql -p 80:80 -p 3306:3306 webchess &
 
-If You are using the internal database You will propably want to have access to internal /var/lib/mysql directory.
 No forwarding of port 3306 needed.
 
-> ~# mkdir /PathToDir
-
-> ~# docker run -v /PathToDir:/var/lib/mysql -p 80:80 webchess &
+> ~# docker run -v $PWD/mysql:/var/lib/mysql -p 80:80 webchess &
 
 
 ## Access
