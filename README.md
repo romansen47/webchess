@@ -1,7 +1,7 @@
 # Webchess
 
 
-[WebChess](https://github.com/Thorium/webchess) based on [debian}(https://hub.docker.com/_/debian/):wheezy-slim docker container.
+[WebChess](https://github.com/Thorium/webchess) based on [debian](https://hub.docker.com/_/debian/):wheezy-slim docker container.
 
 
 ## Configuration
