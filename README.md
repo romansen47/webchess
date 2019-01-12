@@ -1,5 +1,5 @@
 # Webchess
-This is docker running webchess on debian wheezy
+This is docker running [webchess](https://github.com/Thorium/webchess) on debian wheezy
 
 # Configuration
 If You want to use your own external database, You need to adjust the scripts/conf.sh file.
