@@ -1,6 +1,6 @@
 create database WebChess_DB;
 create user 'WebChessUser'@'localhost' identified by '12345';
-use WebChess_DB
+use WebChess_DB;
 CREATE TABLE communication (
   commID smallint(6) NOT NULL auto_increment,
   gameID smallint(6) default NULL,
