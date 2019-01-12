@@ -25,7 +25,7 @@ No local installation of a mysql server is needed in this case.
 
 ## Building
 
-### Mind that or Raspberry Pie local building from Dockerfile is needed. Alternatively You can use the image privided by *romansen47/webchess:rpi3* tag.
+Mind that or Raspberry Pie local building from Dockerfile is needed. Alternatively You can use the image privided by *romansen47/webchess:rpi3* tag.
 
 > ~# docker build -t webchess .
 
