@@ -1,21 +1,20 @@
 # Webchess
 
-[WebChess](https://github.com/Thorium/webchess) based on debian wheezy-slim docker container.
+[WebChess](https://github.com/Thorium/webchess) based on [debian}(https://hub.docker.com/_/debian/):wheezy-slim docker container.
 
 
 ## Configuration
 
-If You want to use your own external database, You need to adjust the scripts/conf.sh file.
-You can use the scripts/mysql.sql script in order to create a user and database 
-corresponding to credentials provided in this file. 
-configure an external database running
+If You want to use your own external database, You will need to edit the database configuration file
+[conf.sh](scripts/conf.sh). Additionally, if You want to create an external database You can use the [mysql.sql file](scripts/mysql.sql).
+
+After having edited *mysql.sql* You can create the external database running
 
 > ~# mysql -uroot -p'MysqlRootPass' < mysql.sql
 
 No local installation of a mysql server is needed in this case.
  
-For Raspberry Pie building from Dockerfile on rpi needed.
-
+Mind that or Raspberry Pie local building from Dockerfile is needed. Alternatively You can use the image privided by *romansen47/webchess:rpi3* tag.
 
 
 ## Building
