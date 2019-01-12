@@ -2,16 +2,30 @@
 This is docker running webchess on debian wheezy
 
 # Configuration
-If You want to use your own external database, You need to adjust the config.php file. For Raspberry pi3 building from Dockerfile on rpi needed.
+If You want to use your own external database, You need to adjust the scripts/conf.sh file.
+You can use the scripts/mysql.sql script in order to create a user and database 
+corresponding to credentials provided in this file. 
+configure an external database running
+
+~# mysql -uroot -p'MysqlRootPass' < mysql.sql
+
+No local installation of a mysql server is needed in this case.
+ 
+For Raspberry Pie building from Dockerfile on rpi needed.
 
 # Building
-docker build -t webchess .
+~# docker build -t webchess .
 
 # Create container
-docker run -p 80:80 webchess &
+If You are using an external database You need to forward the standard mysql port 3306 
+
+~# docker run -p 80:80 -p 3306:3306 webchess &
+
+If You are using the internal database You will propably want to have access to internal /var/lib/mysql directory.
+No forwarding of port 3306 needed.
+
+~# docker run -v /PathToDir:/var/lib/mysql -p 80:80 webchess &
 
 # Access
 webchess should be accessible via http://hostname:80/ 
 
-# Plan (maybe)
-In an upcoming step the database will be configured in a configuration file will be available in a seperate volume.
