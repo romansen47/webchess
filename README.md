@@ -33,6 +33,7 @@ If You are using the internal database You will propably want to have access to 
 No forwarding of port 3306 needed.
 
 > ~# mkdir /PathToDir
+
 > ~# docker run -v /PathToDir:/var/lib/mysql -p 80:80 webchess &
 
 
