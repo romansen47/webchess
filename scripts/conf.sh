@@ -40,5 +40,7 @@ rm /var/www/config.php.*
 
 service mysql start
 mysql -u root < /tmp/scripts/mysql.sql
+
+mkdir -p /var/lib/mysql
 mv /tmp/scripts/mysql.sql /var/lib/mysql/
 
