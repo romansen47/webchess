@@ -1,4 +1,4 @@
-### Webchess
+# Webchess
 
 [WebChess](https://github.com/Thorium/webchess) based on debian wheezy-slim docker container.
 
@@ -23,7 +23,7 @@ For Raspberry Pie building from Dockerfile on rpi needed.
 > ~# docker build -t webchess .
 
 
-# Create container
+## Create container
 
 If You are using an external database You need to forward the standard mysql port 3306 
 
@@ -35,7 +35,7 @@ No forwarding of port 3306 needed.
 > ~# docker run -v /PathToDir:/var/lib/mysql -p 80:80 webchess &
 
 
-# Access
+## Access
 
 WebChess should be accessible via http://hostname:80/ 
 
